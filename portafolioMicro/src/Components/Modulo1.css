@@ -1,0 +1,73 @@
+.modulo1 {
+    margin-bottom: 2rem;
+    color: black; 
+    height: 100vh;
+}
+
+.principal{
+    width: max-content;
+    margin: auto;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.principal h2{
+    padding: 10px;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4%;
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    bottom: 2rem;
+}
+
+.resumen{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.resumen h3{
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.resumen p{
+    font-size: 1.125;
+    line-height: 2rem;
+}
+
+
+.presentaciones{
+    display: flex;
+    position: relative;
+    left: 20%;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: start;
+    width: 60%;
+}
+
+.presentacion{
+    border: 2px black solid;
+    padding: 15px;
+    border-radius: 2rem;
+}
+
+
+.presentaciones iframe{
+    position: relative;
+    top: 0;
+    height: 230px;
+    width: 100%;
+}
+
+
