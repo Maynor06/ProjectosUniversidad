@@ -2,7 +2,7 @@ import { useState } from "react"
 import { ModalUtil } from "./ModalUtil"
 import './CardClass.css'
 
-const CardClass = ({ title, description, img,document, body }) => {
+const CardClass = ({ title, description, img, body }) => {
 
     const [modalShow, setModalShow] = useState(false)
 
@@ -11,9 +11,9 @@ const CardClass = ({ title, description, img,document, body }) => {
     }
 
     return (
-        <div className="card sm:w-[40%] phone:w-[300px] phone:h-[160px] phone:m-auto phone:mt-[inherit] ">
+        <div className="card sm:w-[40%] phone:w-[300px] phone:h-[220px] phone:m-auto phone:mt-[inherit] ">
             <div className="face front" >
-                <img className="imgClass" src={img} alt="imagen clase" />
+                <img className="imgClass" loading="lazy" src={img} alt="imagen clase" />
                 <h3 className="title_front">
                     {title}
                 </h3>

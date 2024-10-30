@@ -1,18 +1,26 @@
+import { useState } from 'react';
 import './Portada.css'
 
 
 export const Portada = () => {
 
+    const [menuShow, setMenuShow] = useState(false)
+
     return (
 
         <div className="portada" >
 
-            <ul className="navegacion sm:top-28 sm:relative phone:text-sm phone:w-min  " >
-                <li className='sm:px-3'> <a href="/Modulo1/" className='sm:text-lg sm:mx-0' >Parcial 1 </a></li>
-                <li className='sm:px-3'><a href="/Modulo1/" className='sm:text-lg sm:mx-0' >Parcial 2</a></li>
-                <li className='sm:px-3'><a href="/Modulo1/" className='sm:text-lg sm:mx-0'>Parcial 3</a></li>
-                <li className='sm:px-3'><a href="/Modulo1/" className='sm:text-lg sm:mx-0'>Glosario</a></li>
+            
+            <button className='bg-transparent relative left-[80%] w-max p-3 top-6 phone:flex justify-center items-center hidden' onClick={() => setMenuShow(!menuShow)} ><img className='w-6 hover:transform hover:scale-110' src={menuShow ? "Close.svg": "Menu.svg" } alt="menu" /></button>
+
+            <ul className={`navegacion sm:top-28 sm:relative phone:text-sm phone:flex phone:flex-col phone:gap-3 phone:w-max phone:top-16 phone:left-[55%] phone:absolute ${menuShow ? 'opacity-100 ': 'phone:opacity-0 phone:hidden ' } `} >
+                <li className='sm:px-3'> <a href="#Modulo1" className='sm:text-lg sm:mx-0' >Parcial 1 </a></li>
+                <li className='sm:px-3'><a href="#Parcial2" className='sm:text-lg sm:mx-0' >Parcial 2</a></li>
+                <li className='sm:px-3'><a href="#Examen" className='sm:text-lg sm:mx-0'>Parcial 3</a></li>
+                <li className='sm:px-3'><a href="#Glosario" className='sm:text-lg sm:mx-0'>Glosario</a></li>
             </ul>
+
+
  
             <div className='m-auto sm:m-10 phone:m-0' >
                 <div className="fig" >

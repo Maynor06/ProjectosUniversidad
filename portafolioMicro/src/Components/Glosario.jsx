@@ -87,10 +87,15 @@ const Glosario = () => {
 
     return (
         <>
-            <div className="mb-10 flex flex-col items-center ">
-                <h3 className="text-2xl mb-5 border-b-2 border-black phone:text-xl phone:font-bold text-center phone:border-0" >Lista de palabras aprendidas <br /> durante el curso </h3>
-                <img src="Arrow.svg" alt="flecha" className="ml-8" />
-                <button onClick={handleModalShow} className="bg-purple-600 hover:bg-blue-400 hover:scale-110 text-xl w-28 h-8 mr-2 ">Glorasio</button>
+            <div id="Glosario" className="mb-10 flex items-center h-screen justify-center phone:w-[90%] ">
+
+                <div className="flex flex-col items-center" >
+                    <h3 className="text-2xl mb-5 phone:text-xl phone:font-bold text-center phone:border-0 font-semibold phone:relative phone:left-4 " > Listado de palabras aprendidas durante <br/> el semestre :D </h3>
+                    <img src="Arrow.svg" alt="flecha" className="ml-8 phone:relative phone:left-4" />
+                    <button onClick={handleModalShow} className="bg-purple-600 hover:bg-blue-400 hover:scale-110 text-xl w-28 h-8 mr-2 phone:w-40 phone:left-4 phone:relative font-bold "> GLOSARIO </button>
+                </div>
+                <img src="Adam.png" alt="padre de la economía" loading="lazy" className="phone:absolute phone:opacity-0 phone:hidden" />
+
             </div>
 
             <Modal
@@ -111,7 +116,7 @@ const Glosario = () => {
 
                         return (
 
-                            <div key={x} className="flex gap-2 flex-col p-1 mb-2 border-2 border-gray-400 rounded-xl" >
+                            <div key={x} className="flex gap-2 flex-col p-1 mb-2 border-2 border-gray-400 rounded-xl " >
                                 <div className="flex justify-between">
                                     <div className="flex items-center gap-2">
                                         <p className="font-bold " >{x + 1})</p>

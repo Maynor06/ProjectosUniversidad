@@ -2,7 +2,7 @@ export const Footer = () => {
     return(
         <div className="relative">
       <footer className="bg-[#A9A9A9] relative bottom-0 phone:relative w-full h-16 flex items-center justify-center text-white mt-4 ">
-      <a href="https://www.facebook.com/maynor.dc.5/" target="_blank" className="absolute left-4 rounded-full transition-transform duration-300 ease-in-out hover:scale-150">
+      <a href="https://www.instagram.com/_maynor_06/?next=%2F" target="_blank" className="absolute left-4 rounded-full transition-transform duration-300 ease-in-out hover:scale-150">
           <img className="w-9 h-9" src="Instagram.svg" alt="about" />
         </a>
         
